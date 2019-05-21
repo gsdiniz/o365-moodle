@@ -133,6 +133,18 @@ class base {
                 }
             }
         }
+        
+        $userinfo['sexo']=$idtoken->claim('');
+        $userinfo['nascimento']=$idtoken->claim('');
+        $userinfo['matr']=$idtoken->claim('');
+        $userinfo['exercicio']=$idtoken->claim('');
+        $userinfo['praca']=$idtoken->claim('');
+        $userinfo['unidade']=$idtoken->claim('');
+        $userinfo['localizacao']=$idtoken->claim('');
+        $userinfo['cargo']=$idtoken->claim('');
+        $userinfo['funcao']=$idtoken->claim('');
+        $userinfo['nomechefe']=$idtoken->claim('');
+        $userinfo['emailchefe']=$idtoken->claim('');
 
         return $userinfo;
     }
